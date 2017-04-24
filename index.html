@@ -1,10 +1,49 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>ComputerGalaxy</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Computer Galaxy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</body>
+        <link rel="stylesheet" href="skippr-master/assets/css/reset.css">
+        <link rel="stylesheet" href="skippr-master/assets/css/style.css">
+        <link rel="stylesheet" href="skippr-master/dist/skippr.css">
+        <line rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div id="random">
+                <div class="yellow"></div>
+                <div style="background-image: url(skippr-master/assets/img/test5.jpg)"></div>
+                <div style="background-image: url(skippr-master/assets/img/desert.jpg); background-position:bottom;"></div>
+                <div style="background-image: url(skippr-master/assets/img/test3.jpg)"></div>
+                <div style="background-image: url(skippr-master/assets/img/boardwalk.jpg)"></div>
+            </div>
+            <div class="container">
+                <div class="tagline">
+                    <h1>Computer Galaxy</h1>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="info">
+                <p>created by goorain and hapsidra</p>
+                <p><a href="https://github.com/HapsidRain/online-shop">Github</a></p>
+            </div>
+        </footer>
 
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="skippr-master/dist/skippr.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#random").skippr({
+                    autoPlay : true,
+                    autoPlayDuration : 2000,
+                    logs : true
+                });
+            });
+        </script>
+    </body>
 </html>
